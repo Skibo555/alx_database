@@ -1,5 +1,5 @@
 -- The COUNT function.
 
-SELECT COUNT(*) AS record_count
+SELECT COUNT(id)
 FROM first_table
 WHERE id = 98;
