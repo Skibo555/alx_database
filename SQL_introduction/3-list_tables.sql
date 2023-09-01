@@ -1,2 +1,2 @@
 -- This is a script that shows the tables of a file.
-SHOW TABLE;
+SHOW TABLES;
