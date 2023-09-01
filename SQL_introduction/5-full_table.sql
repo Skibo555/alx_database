@@ -1,3 +1,3 @@
 -- I want to describe this table.
 
-SHOW COLUMNS FROM first_table;
+SHOW COLUMNS FROM hbtn_0c_0;
