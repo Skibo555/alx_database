@@ -1,5 +1,7 @@
 -- Find the state_id for California
-SELECT FROM states WHERE name = 'California';
+USE hbtn_0d_usa;
 
--- List all cities of California using a subquery
-SELECT * FROM cities WHERE state_id = @california_state_id ORDER BY id ASC;
+SELECT * FROM states
+WHERE name = 'California'
+ORDER BY cities_id ASC, id DESC;
+
