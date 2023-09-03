@@ -1,4 +1,4 @@
 -- Find the state_id for California
 SELECT * FROM states
 WHERE name = 'California'
-ORDER BY cities.id ASC;
+ORDER AS cities.id ASC;
