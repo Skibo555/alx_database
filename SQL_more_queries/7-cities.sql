@@ -1,7 +1,14 @@
--- We must create.
+-- Create the database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
-CREATE DATABASE IF NOT EXISTS  hbtn_0d_usa;
+-- Use the database
+USE hbtn_0d_usa;
 
--- Creating a table is not that hard.
+-- Creating the cities table with a self-referencing foreign key
+CREATE TABLE IF NOT EXISTS cities (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    state_id INT NOT NULL,
+    name VARCHAR(256) NOT NULL,
+    FOREIGN KEY (state_id) REFERENCES cities(id)
+);
 
-CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (id INT AUTO_INCREMENT NOT NULL PRIMARY KEY, state_id INT NOT NULL, FOREIGN KEY (id) REFERENCES cities(id), name VARCHAR(256) NOT NULL);
